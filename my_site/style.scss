@@ -1,0 +1,38 @@
+/* style.scss */
+$headers-color:#858d66;
+$main-color: #c2c6b3;
+$footer-background-color: #404d1f;
+$footer-font-color: white;
+$radius: 10px;
+
+body {
+	background-color: $main-color;
+}
+
+h1 {	
+	color: $headers-color;
+}
+	
+p {
+	font-family: arial;
+}
+
+.warning {
+	@extend p;
+	color: yellow;
+}
+
+@mixin rounded-border ($radius) {
+  border-radius: $radius;
+  border: solid;
+}
+
+header {
+	@include rounded-border(30px);
+}
+
+footer {
+	@include rounded-border;
+	background-color: $footer-background-color;
+	color: $footer-font-color;	
+}

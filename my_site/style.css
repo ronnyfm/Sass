@@ -1,0 +1,22 @@
+/* style.scss */
+body {
+  background-color: #c2c6b3; }
+
+h1 {
+  color: #858d66; }
+
+p, .warning {
+  font-family: arial; }
+
+.warning {
+  color: yellow; }
+
+header {
+  border-radius: 30px;
+  border: solid; }
+
+footer {
+  border-radius: 10px;
+  border: solid;
+  background-color: #404d1f;
+  color: white; }
