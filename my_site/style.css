@@ -8,6 +8,11 @@ h1 {
 p, .warning {
   font-family: arial; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
 .warning {
   color: yellow; }
 
@@ -20,3 +25,31 @@ footer {
   border: solid;
   background-color: #404d1f;
   color: white; }
+
+.circle4 {
+  width: 200px;
+  height: 200px;
+  display: block;
+  background-color: black;
+  border-radius: 100px; }
+
+.circle3 {
+  width: 150px;
+  height: 150px;
+  display: block;
+  background-color: black;
+  border-radius: 75px; }
+
+.circle2 {
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-color: black;
+  border-radius: 50px; }
+
+.circle1 {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: black;
+  border-radius: 25px; }

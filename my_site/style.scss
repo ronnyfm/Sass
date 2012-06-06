@@ -1,8 +1,5 @@
 /* style.scss */
-$headers-color:#858d66;
-$main-color: #c2c6b3;
-$footer-background-color: #404d1f;
-$footer-font-color: white;
+@import "colors";
 $radius: 10px;
 
 body {
@@ -10,11 +7,18 @@ body {
 }
 
 h1 {	
-	color: $headers-color;
+	#{$c}: $headers-color;
 }
 	
 p {
 	font-family: arial;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .warning {
@@ -33,6 +37,22 @@ header {
 
 footer {
 	@include rounded-border;
-	background-color: $footer-background-color;
+	background-#{$c}: $footer-background-color;
 	color: $footer-font-color;	
+}
+
+@mixin circle($height:20px){
+	width:$height;
+	height:$height;
+	display:block;
+	background-color:black;
+	border-radius:$height/2;
+}
+
+$i: 4;
+@while $i > 0 {
+  .circle#{$i} { 
+	@include circle($i*50px); 
+  }
+  $i: $i - 1;
 }
